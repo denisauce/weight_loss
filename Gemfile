@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
 ruby "3.2.2"
-
+gem 'pg'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.2"
+gem "rails", "~> 7.1.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -55,5 +55,8 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
 end
 
+
+gem "devise", "~> 4.9"

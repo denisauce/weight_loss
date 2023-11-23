@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: weight loss_development
+  username: weight_loss
+  password: 12345678
+  host: localhost
+
+test:
+  <<: *default
+  database: weight_loss_test
+  
